@@ -946,6 +946,220 @@ describe('GenericRedisCache', () => {
     })
   })
 
+  describe('.getLast', () => {
+    context('when the key is `JSON_ARRAY`', () => {
+      context('and the key has one `ID`', () => {
+        const VALUE = 1
+
+        context('when there is value cached', () => {
+          context('and a `key` is passed', () => {
+            context('and the value is not an empty list', () => {
+              let cacheValue
+              let response
+
+              before(async () => {
+                cacheValue = [
+                  { teste: faker.datatype.number(100) },
+                  { teste: faker.datatype.number(100) },
+                  { teste: faker.datatype.number(100) }
+                ]
+
+                await GenericJSONArrayCache
+                  .initArrayCache(JSONArrayKeySingleID.getKeyName(VALUE), cacheValue)
+                
+                response = await JSONArrayKeySingleID
+                  .getLast(VALUE)
+              })
+    
+              after(async () => {
+                await GenericJSONCacheMock
+                  .delete(JSONArrayKeySingleID.getKeyName(VALUE))
+              })
+
+              it('should return the last object in the cache array', async () => {
+                const lastObject = cacheValue.pop()
+  
+                expect(response).to.eql(lastObject)
+              })
+            })
+
+            context('and the value is an empty list', () => {
+              let cacheValue
+              let response
+
+              before(async () => {
+                cacheValue = []
+
+                await GenericJSONArrayCache
+                  .initArrayCache(JSONArrayKeySingleID.getKeyName(VALUE), cacheValue)
+
+                response = await JSONArrayKeySingleID
+                  .getLast(VALUE)
+              })
+    
+              after(async () => {
+                await GenericJSONCacheMock
+                  .delete(JSONArrayKeySingleID.getKeyName(VALUE))
+              })
+
+              it('should return `null`', async () => {
+                expect(response).to.be.null
+              })
+            })
+          })
+
+          context('and a `key` is not passed', () => {
+            let response
+
+            before(async () => {
+              response = await JSONArrayKeySingleID
+                .getLast()
+            })
+
+            it('should return `null`', async () => {
+              expect(response).to.be.null
+            })
+          })
+        })
+
+        context('when there are no value cached', () => {
+          let response
+
+          before(async () => {
+            response = await JSONArrayKeySingleID
+              .getLast(VALUE)
+          })
+
+          it('should return `null`', async () => {
+            expect(response).to.be.null
+          })
+        })
+      })
+
+      context('and the key has more than one `ID`', () => {
+        const VALUES = {
+          object_id: Math.floor(faker.datatype.number(50) + 1),
+          second_id: Math.floor(faker.datatype.number(50) + 1),
+          third_id: Math.floor(faker.datatype.number(50) + 1)
+        }
+
+        context('when there are value cached', () => {
+          context('and a `key` is passed', () => {
+            context('and the value is not an empty list', () => {
+              let cacheValue
+              let response
+
+              before(async () => {
+                cacheValue = [
+                  { teste: faker.datatype.number(100) },
+                  { teste: faker.datatype.number(100) },
+                  { teste: faker.datatype.number(100) }
+                ]
+
+                await GenericJSONArrayCache
+                  .initArrayCache(JSONArrayKeyMultiID.getKeyName(VALUES), cacheValue)
+                
+                response = await JSONArrayKeyMultiID
+                  .getLast(VALUES)
+              })
+    
+              after(async () => {
+                await GenericJSONCacheMock
+                  .delete(JSONArrayKeyMultiID.getKeyName(VALUES))
+              })
+
+              it('should return the last object in the cache array', async () => {
+                const lastObject = cacheValue.pop()
+  
+                expect(response).to.eql(lastObject)
+              })
+            })
+
+            context('and the value is an empty list', () => {
+              let cacheValue
+              let response
+
+              before(async () => {
+                cacheValue = []
+
+                await GenericJSONArrayCache
+                  .initArrayCache(JSONArrayKeyMultiID.getKeyName(VALUES), cacheValue)
+
+                response = await JSONArrayKeyMultiID
+                  .getLast(VALUES)
+              })
+    
+              after(async () => {
+                await GenericJSONCacheMock
+                  .delete(JSONArrayKeyMultiID.getKeyName(VALUES))
+              })
+
+              it('should return `null`', async () => {
+                expect(response).to.be.null
+              })
+            })
+          })
+
+          context('and a `key` is not passed', () => {
+            let response
+
+            before(async () => {
+              response = await JSONArrayKeyMultiID
+                .getLast()
+            })
+
+            it('should return `null`', async () => {
+              expect(response).to.be.null
+            })
+          })
+        })
+
+        context('when there are no value cached', () => {
+          let response
+
+          before(async () => {
+            response = await JSONArrayKeyMultiID
+              .getLast(VALUES)
+          })
+
+          it('should return `null`', async () => {
+            expect(response).to.be.null
+          })
+        })
+      })
+    })
+
+    context('when the key is not `JSON_ARRAY`', () => {
+      const VALUE = 1
+
+      let cacheValue
+      let response
+
+      before(async () => {
+        cacheValue = [
+          { teste: faker.datatype.number(100) },
+          { teste: faker.datatype.number(100) },
+          { teste: faker.datatype.number(100) }
+        ]
+
+        await GenericJSONArrayCache
+          .initArrayCache(JSONKeySingleID.getKeyName(VALUE), cacheValue)
+        
+        response = await JSONKeySingleID
+          .getLast(VALUE)
+      })
+
+      after(async () => {
+        await GenericJSONCacheMock
+          .delete(JSONKeySingleID.getKeyName(VALUE))
+      })
+
+      it('should return `null`', () => {
+        expect(response).to.be.null
+      })
+    })
+  })
+
   describe('.get', () => {
     context('when there is cached value', () => {
       context('and `getCache` returns an object', () => {
