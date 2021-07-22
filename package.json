@@ -69,7 +69,7 @@
     "sinon-as-promised": "^4.0.2",
     "sinon-chai": "^3.5.0",
     "socket.io": "^1.6.0",
-    "socket.io-redis": "^1.0.0"
+    "socket.io-redis": "^6.1.1"
   },
   "husky": {
     "hooks": {
