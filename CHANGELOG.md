@@ -1,3 +1,10 @@
+## 1.7.0 (2021-07-22)
+
+
+### Features
+
+* [`GenericRedisCache`] Add `.getLast`
+
 ## 1.6.1 (2021-07-07)
 
 
