@@ -949,7 +949,7 @@ describe('GenericRedisCache', () => {
   describe('.getLast', () => {
     context('when the key is `JSON_ARRAY`', () => {
       context('and the key has one `ID`', () => {
-        const VALUE = 1
+        const KEY = 1
 
         context('when there is value cached', () => {
           context('and a `key` is passed', () => {
@@ -965,15 +965,15 @@ describe('GenericRedisCache', () => {
                 ]
 
                 await GenericJSONArrayCache
-                  .initArrayCache(JSONArrayKeySingleID.getKeyName(VALUE), cacheValue)
+                  .initArrayCache(JSONArrayKeySingleID.getKeyName(KEY), cacheValue)
                 
                 response = await JSONArrayKeySingleID
-                  .getLast(VALUE)
+                  .getLast(KEY)
               })
     
               after(async () => {
                 await GenericJSONCacheMock
-                  .delete(JSONArrayKeySingleID.getKeyName(VALUE))
+                  .delete(JSONArrayKeySingleID.getKeyName(KEY))
               })
 
               it('should return the last object in the cache array', async () => {
@@ -991,15 +991,15 @@ describe('GenericRedisCache', () => {
                 cacheValue = []
 
                 await GenericJSONArrayCache
-                  .initArrayCache(JSONArrayKeySingleID.getKeyName(VALUE), cacheValue)
+                  .initArrayCache(JSONArrayKeySingleID.getKeyName(KEY), cacheValue)
 
                 response = await JSONArrayKeySingleID
-                  .getLast(VALUE)
+                  .getLast(KEY)
               })
     
               after(async () => {
                 await GenericJSONCacheMock
-                  .delete(JSONArrayKeySingleID.getKeyName(VALUE))
+                  .delete(JSONArrayKeySingleID.getKeyName(KEY))
               })
 
               it('should return `null`', async () => {
@@ -1031,7 +1031,7 @@ describe('GenericRedisCache', () => {
             { teste: faker.datatype.number(100) }
           ]
 
-          const KEY_NAME = JSONArrayKeySingleID.getKeyName(VALUE)
+          const KEY_NAME = JSONArrayKeySingleID.getKeyName(KEY)
   
           context('and `getDB` returns an object', () => {
             before(async () => {
@@ -1043,7 +1043,7 @@ describe('GenericRedisCache', () => {
               }
   
               response = await JSONArrayKeySingleID
-                .getLast(VALUE)
+                .getLast(KEY)
             })
   
             after(async () => {
@@ -1062,7 +1062,7 @@ describe('GenericRedisCache', () => {
   
             it('should save the object on cache', async () => {
               const cachedObject = await JSONArrayKeySingleID
-                .get(VALUE)
+                .get(KEY)
   
               expect(cachedObject).to.eql(OBJECT)
             })
@@ -1076,7 +1076,7 @@ describe('GenericRedisCache', () => {
               }
   
               response = await JSONArrayKeySingleID
-                .get(VALUE)
+                .get(KEY)
             })
   
             after(async () => {
@@ -1095,7 +1095,7 @@ describe('GenericRedisCache', () => {
   
             it('should save an empty array on cache', async () => {
               const cachedObject = await redis
-                .json_getAsync(JSONArrayKeySingleID.getKeyName(VALUE))
+                .json_getAsync(JSONArrayKeySingleID.getKeyName(KEY))
   
               expect(cachedObject).to.eql('[]')
             })
