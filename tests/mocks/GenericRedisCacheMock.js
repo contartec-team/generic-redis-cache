@@ -18,7 +18,7 @@ class GenericRedisCacheMock {
     return {
       id                      : faker.internet.mac(),
       string_attr             : 'test'+ (Math.floor(Math.random() * 1000) + 1),
-      number_attr             : faker.random.number(10) + 1,
+      number_attr             : faker.datatype.number(10) + 1,
     }
   }
 
