@@ -45,7 +45,7 @@
     "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
     "bluebird": "^3.4.6",
     "chai": "^4.2.0",
-    "chai-as-promised": "^5.3.0",
+    "chai-as-promised": "^7.1.1",
     "chai-datetime": "^1.4.1",
     "chai-http": "^2.0.1",
     "chai-shallow-deep-equal": "^1.4.6",
