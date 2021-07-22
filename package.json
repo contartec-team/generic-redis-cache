@@ -34,7 +34,7 @@
   "author": "contartec",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "redis": "^2.8.0",
     "redis-rejson": "^1.0.0",
     "redis-url": "^1.2.1"
