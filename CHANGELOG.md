@@ -1,3 +1,10 @@
+## 1.8.0 (2021-10-25)
+
+
+### Features
+
+* [`GenericRedisCache`] Refatorar `.setValue` e .`setObject` para retornar o antigo valor do cache
+
 ## 1.7.0 (2021-07-22)
 
 
