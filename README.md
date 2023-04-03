@@ -1,15 +1,14 @@
 # Generic service for operations on redis cache
 
-[![CircleCI](https://circleci.com/gh/contartec/generic-model-bookshelf.svg?style=shield&circle-token=21e695f1398a24c2a7387f71cf5b33ebac7893e3)](https://circleci.com/gh/contartec-team/generic-redis-cache)
-[![Maintainability](https://api.codeclimate.com/v1/badges/771d5d19224905f02163/maintainability)](https://codeclimate.com/github/contartec-team/generic-redis-cache/maintainability)
-[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6ImNvbnRhcnRlYy10ZWFtIiwicmVwbzEiOiJnZW5lcmljLXJlZGlzLWNhY2hlIiwiaW5jbHVkZUxpbnQiOmZhbHNlLCJhdXRob3JJZCI6MTczMjgsImlhdCI6MTYxMDI5Njk2NX0.TeWyHILphc-N5KmzGS8XIuayxMYFX0MYuHpARwEg7lw)](https://www.deepcode.ai/app/gh/contartec-team/generic-redis-cache/_/dashboard?utm_content=gh%2Fcontartec-team%2Fgeneric-redis-cache)
-[![Test Coverage](https://codecov.io/gh/contartec-team/generic-redis-cache/branch/master/graph/badge.svg)](https://codecov.io/gh/contartec-team/generic-redis-cache)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/kajoo-team/generic-redis-cache/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/kajoo-team/generic-redis-cache/tree/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/73ad71c4dce850d6f9d4/maintainability)](https://codeclimate.com/github/kajoo-team/generic-redis-cache/maintainability)
+[![Test Coverage](https://codecov.io/gh/kajoo-team/generic-redis-cache/branch/master/graph/badge.svg)](https://codecov.io/gh/kajoo-team/generic-redis-cache)
 
 A set of generic model methods to inherit
 
 ## Install
 
-`npm i @contartec-team/generic-redis-cache`
+`npm i @kajoo-team/generic-redis-cache`
 
 ## Quick-start
 
@@ -23,14 +22,14 @@ app/
 ```js
 // index.js (aka bootstrap/init file)
 // Pass the `redis` instance
-require('@contartec-team/generic-redis-cache/lib/configs/redisInstanceService')(redis)
+require('@kajoo-team/generic-redis-cache/lib/configs/redisInstanceService')(redis)
 ```
 
 ```js
 // caches/DogCache.js
 const Dog = require('../models/Dog')
-const GenericRedisCache = require('@contartec-team/generic-redis-cache')
-const RedisKeyTypeEnum = require('@contartec-team/generic-redis-cache/lib/enums/RedisKeyTypeEnum')
+const GenericRedisCache = require('@kajoo-team/generic-redis-cache')
+const RedisKeyTypeEnum = require('@kajoo-team/generic-redis-cache/lib/enums/RedisKeyTypeEnum')
 
 const GENERIC_REDIS_ATTRS = {
   keyName     : 'people:{?}:dogs:{?}',
@@ -117,4 +116,4 @@ Dog
 
 ## Docs
 
-https://contartec-team.github.io/generic-redis-cache/index.html
+https://kajoo-team.github.io/generic-redis-cache/index.html

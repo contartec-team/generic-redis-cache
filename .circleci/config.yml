@@ -113,7 +113,7 @@ jobs:
       - run:
           name    : Authenticating with registry
           command : |
-            echo "registry=https://npm.pkg.github.com/contartec-team" > .npmrc
+            echo "registry=https://npm.pkg.github.com/kajoo-team" > .npmrc
             echo "//npm.pkg.github.com/:_authToken=$GH_TOKEN" >> .npmrc
 
       - run:

@@ -3,7 +3,7 @@
 const GenericJSONArrayCache = require('../../../lib/services/types/GenericJSONArrayCache')
 const JSONArrayKeySingleID = require('../../cache/JSON_ARRAY/JSONArrayKeySingleID')
 
-const SpyMock = require('@contartec-team/spy-mock/lib/SpyMock')
+const SpyMock = require('@kajoo-team/spy-mock/lib/SpyMock')
 
 describe('GenericJSONArrayCache', () => {
   describe('.isCached', () => {
@@ -18,7 +18,7 @@ describe('GenericJSONArrayCache', () => {
         before(async () => {
           GenericJSONArrayCache
             .initArrayCache(keyName, CACHE_VALUE)
-          
+
           isCached = await GenericJSONArrayCache
             .isCached(keyName)
         })
@@ -43,7 +43,7 @@ describe('GenericJSONArrayCache', () => {
         before(async () => {
           GenericJSONArrayCache
             .initArrayCache(keyName, CACHE_VALUE)
-          
+
           isCached = await GenericJSONArrayCache
             .isCached()
         })
@@ -65,7 +65,7 @@ describe('GenericJSONArrayCache', () => {
 
       let isCached
 
-      before(async () => {        
+      before(async () => {
         isCached = await GenericJSONArrayCache
           .isCached(keyName)
       })
@@ -76,7 +76,7 @@ describe('GenericJSONArrayCache', () => {
     })
   })
 
-  describe('.initArrayCache', () => {  
+  describe('.initArrayCache', () => {
     context('when the `keyName` is passed', () => {
       const ID = 1
       const keyName = JSONArrayKeySingleID.getKeyName(ID)
@@ -108,7 +108,7 @@ describe('GenericJSONArrayCache', () => {
         })
       })
 
-      context('and the `value` is not passed', () => {        
+      context('and the `value` is not passed', () => {
         let result
 
         before(async () => {
@@ -134,7 +134,7 @@ describe('GenericJSONArrayCache', () => {
       })
     })
 
-    context('when the `keyName` is not passed', () => {       
+    context('when the `keyName` is not passed', () => {
       let result
 
       before(async () => {
@@ -151,7 +151,7 @@ describe('GenericJSONArrayCache', () => {
   describe('._addCache', () => {
     const ID = 1
     const keyName = JSONArrayKeySingleID.getKeyName(ID)
-    
+
     context('when the `position` is passed', () => {
       context('and the `position` is in the array\'s range', () => {
         const CACHE_VALUE = { teste: ID, attr1: 'teste' }
@@ -164,7 +164,7 @@ describe('GenericJSONArrayCache', () => {
 
           GenericJSONArrayCache
             .initArrayCache(keyName, value)
-          
+
           result = await GenericJSONArrayCache
             ._addCache(keyName, CACHE_VALUE, position)
         })
@@ -188,7 +188,7 @@ describe('GenericJSONArrayCache', () => {
 
       context('and the `position` is not in the array\'s range', () => {
         const CACHE_VALUE = { teste: ID, attr1: 'teste' }
-        
+
         let result
 
         before(async () => {
@@ -198,7 +198,7 @@ describe('GenericJSONArrayCache', () => {
 
           GenericJSONArrayCache
             .initArrayCache(keyName, value)
-          
+
           result = await GenericJSONArrayCache
             ._addCache(keyName, CACHE_VALUE, position)
         })
@@ -225,7 +225,7 @@ describe('GenericJSONArrayCache', () => {
 
     context('when the `position` is not passed', () => {
       const CACHE_VALUE = { teste: ID, attr1: 'teste' }
-        
+
       let result
 
       before(async () => {
@@ -233,7 +233,7 @@ describe('GenericJSONArrayCache', () => {
 
         GenericJSONArrayCache
           .initArrayCache(keyName, value)
-        
+
         result = await GenericJSONArrayCache
           ._addCache(keyName, CACHE_VALUE)
       })
@@ -264,7 +264,7 @@ describe('GenericJSONArrayCache', () => {
       context('and a `value` is passed', () => {
         context('and the `keyName` is cached', () => {
           const CACHE_VALUE = { teste: ID, attr1: 'teste' }
-          
+
           let result
           let spies
 
@@ -276,7 +276,7 @@ describe('GenericJSONArrayCache', () => {
               _addCache : SpyMock
                 .addReturnSpy(GenericJSONArrayCache, '_addCache', 1)
             }
-            
+
             result = await GenericJSONArrayCache
               .addCache(keyName, CACHE_VALUE)
           })
@@ -362,11 +362,11 @@ describe('GenericJSONArrayCache', () => {
 
       it('should return the list size', () => {
         expect(result).to.eql(0)
-      }) 
+      })
     })
   })
 
-  describe('.slice', () => {   
+  describe('.slice', () => {
     context('when `key` is passed', () => {
       const KEY = 1
       const KEY_NAME = JSONArrayKeySingleID.getKeyName(KEY)
@@ -380,7 +380,7 @@ describe('GenericJSONArrayCache', () => {
             before(async () => {
               await redis
                 .json_setAsync(KEY_NAME, '.', JSON.stringify(VALUE))
-              
+
               const params = {
                 start : 1,
                 stop  : 3
@@ -389,12 +389,12 @@ describe('GenericJSONArrayCache', () => {
               response = await GenericJSONArrayCache
                 .slice(KEY_NAME, params)
             })
-    
+
             after(async () => {
               await GenericJSONArrayCache
                 .delete(KEY_NAME)
             })
-    
+
             it('should return the new list size', () => {
               expect(response).to.eql(3)
             })
@@ -406,16 +406,16 @@ describe('GenericJSONArrayCache', () => {
                 .getCache(KEY)
 
               expect(redisResponse).to.eql(newValue)
-            })           
+            })
           })
-        
+
           context('and `start` > `stop`', () => {
             let response
 
             before(async () => {
               await redis
                 .json_setAsync(KEY_NAME, '.', JSON.stringify(VALUE))
-              
+
               const params = {
                 start : 3,
                 stop  : 1
@@ -424,12 +424,12 @@ describe('GenericJSONArrayCache', () => {
               response = await GenericJSONArrayCache
                 .slice(KEY_NAME, params)
             })
-    
+
             after(async () => {
               await GenericJSONArrayCache
                 .delete(KEY_NAME)
             })
-    
+
             it('should return the new list size', () => {
               expect(response).to.eql(0)
             })
@@ -439,7 +439,7 @@ describe('GenericJSONArrayCache', () => {
                 .getCache(KEY)
 
               expect(redisResponse).to.eql([])
-            })  
+            })
           })
         })
 
@@ -450,16 +450,16 @@ describe('GenericJSONArrayCache', () => {
           before(async () => {
             await redis
               .json_setAsync(KEY_NAME, '.', JSON.stringify(VALUE))
-            
+
             response = await GenericJSONArrayCache
               .slice(KEY_NAME, PARAMS)
           })
-  
+
           after(async () => {
             await GenericJSONArrayCache
               .delete(KEY_NAME)
           })
-  
+
           it('should return the new list size', () => {
             const size = VALUE.length - PARAMS.start
 
@@ -473,7 +473,7 @@ describe('GenericJSONArrayCache', () => {
               .getCache(KEY)
 
             expect(redisResponse).to.eql(newValue)
-          })  
+          })
         })
       })
 
@@ -484,18 +484,18 @@ describe('GenericJSONArrayCache', () => {
           before(async () => {
             await redis
               .json_setAsync(KEY_NAME, '.', JSON.stringify(VALUE))
-            
+
             const params = { stop  : 3 }
 
             response = await GenericJSONArrayCache
               .slice(KEY_NAME, params)
           })
-  
+
           after(async () => {
             await GenericJSONArrayCache
               .delete(KEY_NAME)
           })
-  
+
           it('should return the new list size', () => {
             expect(response).to.eql(3)
           })
@@ -520,12 +520,12 @@ describe('GenericJSONArrayCache', () => {
             response = await GenericJSONArrayCache
               .slice(KEY_NAME)
           })
-  
+
           after(async () => {
             await GenericJSONArrayCache
               .delete(KEY_NAME)
           })
-  
+
           it('should return the new list size', () => {
             const size = VALUE.length - 1
 

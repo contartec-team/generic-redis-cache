@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>@contartec-team/generic-redis-cache 1.8.2-development | Documentation</title>
+  <title>@kajoo-team/generic-redis-cache 1.8.2-development | Documentation</title>
   <meta name='description' content='Generic service for operations on redis keys'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' rel='stylesheet'>
@@ -14,7 +14,7 @@
     <div class='flex'>
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
-          <h3 class='mb0 no-anchor'>@contartec-team/generic-redis-cache</h3>
+          <h3 class='mb0 no-anchor'>@kajoo-team/generic-redis-cache</h3>
           <div class='mb1'><code>1.8.2-development</code></div>
           <input
             placeholder='Filter'
@@ -26,487 +26,487 @@
             type='text' />
           <div id='toc'>
             <ul class='list-reset h5 py1-ul'>
-              
-                
+
+
                 <li><a
                   href='#rediskeytypeenum'
                   class="">
                   RedisKeyTypeEnum
-                  
+
                 </a>
-                
+
                 </li>
-              
-                
+
+
                 <li><a
                   href='#genericrediscache'
                   class=" toggle-sibling">
                   GenericRedisCache
                   <span class='icon'>▸</span>
                 </a>
-                
+
                 <div class='toggle-target display-none'>
-                  
+
                   <ul class='list-reset py1-ul pl1'>
                     <li class='h5'><span>Static members</span></li>
-                    
+
                       <li><a
                         href='#genericrediscachegeneric_redis_attrs'
                         class='regular pre-open'>
                         .GENERIC_REDIS_ATTRS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegeneric_redis_attrs'
                         class='regular pre-open'>
                         .GENERIC_REDIS_ATTRS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegeneric_redis_attrs'
                         class='regular pre-open'>
                         .GENERIC_REDIS_ATTRS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachedefault_generic_redis_attrs'
                         class='regular pre-open'>
                         .DEFAULT_GENERIC_REDIS_ATTRS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheattrs'
                         class='regular pre-open'>
                         .ATTRS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetids'
                         class='regular pre-open'>
                         .getIds
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetdb'
                         class='regular pre-open'>
                         .getDB
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetlistdb'
                         class='regular pre-open'>
                         .getListDB
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheongetcache'
                         class='regular pre-open'>
                         .onGetCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheongetlistcache'
                         class='regular pre-open'>
                         .onGetListCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheonsaving'
                         class='regular pre-open'>
                         .onSaving
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheonsave'
                         class='regular pre-open'>
                         .onSave
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheondelete'
                         class='regular pre-open'>
                         .onDelete
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetkeyattrid'
                         class='regular pre-open'>
                         .getKeyAttrId
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetkeyname'
                         class='regular pre-open'>
                         .getKeyName
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetkeynames'
                         class='regular pre-open'>
                         .getKeyNames
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetkeynamesobjects'
                         class='regular pre-open'>
                         .getKeyNamesObjects
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetidindexes'
                         class='regular pre-open'>
                         .getIdIndexes
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetidattrs'
                         class='regular pre-open'>
                         .getIdAttrs
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetcache'
                         class='regular pre-open'>
                         .getCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetlast'
                         class='regular pre-open'>
                         .getLast
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheget'
                         class='regular pre-open'>
                         .get
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetlistcache'
                         class='regular pre-open'>
                         .getListCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachegetlist'
                         class='regular pre-open'>
                         .getList
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachesetcache'
                         class='regular pre-open'>
                         .setCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheaddcache'
                         class='regular pre-open'>
                         .addCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachesetobject'
                         class='regular pre-open'>
                         .setObject
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachesetvalue'
                         class='regular pre-open'>
                         .setValue
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheaddobject'
                         class='regular pre-open'>
                         .addObject
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheset'
                         class='regular pre-open'>
                         .set
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheadd'
                         class='regular pre-open'>
                         .add
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachesetlist'
                         class='regular pre-open'>
                         .setList
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachedelete'
                         class='regular pre-open'>
                         .delete
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheslice'
                         class='regular pre-open'>
                         .slice
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheiscached'
                         class='regular pre-open'>
                         .isCached
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheiskey'
                         class='regular pre-open'>
                         .isKey
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheisattrtrue'
                         class='regular pre-open'>
                         .isAttrTrue
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscacheiskeyvalid'
                         class='regular pre-open'>
                         .isKeyValid
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscachehaskeyid'
                         class='regular pre-open'>
                         .hasKeyId
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscache_getidattr'
                         class='regular pre-open'>
                         ._getIdAttr
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscache_getkeysnotcached'
                         class='regular pre-open'>
                         ._getKeysNotCached
                       </a></li>
-                    
+
                       <li><a
                         href='#genericrediscache_getkeynamescache'
                         class='regular pre-open'>
                         ._getKeyNamesCache
                       </a></li>
-                    
+
                     </ul>
-                  
-                  
-                  
-                  
+
+
+
+
                 </div>
-                
+
                 </li>
-              
-                
+
+
                 <li><a
                   href='#generichashcache'
                   class=" toggle-sibling">
                   GenericHASHCache
                   <span class='icon'>▸</span>
                 </a>
-                
+
                 <div class='toggle-target display-none'>
-                  
+
                   <ul class='list-reset py1-ul pl1'>
                     <li class='h5'><span>Static members</span></li>
-                    
+
                       <li><a
                         href='#generichashcacheiscached'
                         class='regular pre-open'>
                         .isCached
                       </a></li>
-                    
+
                     </ul>
-                  
-                  
-                  
-                  
+
+
+
+
                 </div>
-                
+
                 </li>
-              
-                
+
+
                 <li><a
                   href='#genericjsonarraycache'
                   class=" toggle-sibling">
                   GenericJSONArrayCache
                   <span class='icon'>▸</span>
                 </a>
-                
+
                 <div class='toggle-target display-none'>
-                  
+
                   <ul class='list-reset py1-ul pl1'>
                     <li class='h5'><span>Static members</span></li>
-                    
+
                       <li><a
                         href='#genericjsonarraycacheiscached'
                         class='regular pre-open'>
                         .isCached
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsonarraycache_addcache'
                         class='regular pre-open'>
                         ._addCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsonarraycacheinitarraycache'
                         class='regular pre-open'>
                         .initArrayCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsonarraycacheaddcache'
                         class='regular pre-open'>
                         .addCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsonarraycacheslice'
                         class='regular pre-open'>
                         .slice
                       </a></li>
-                    
+
                     </ul>
-                  
-                  
-                  
-                  
+
+
+
+
                 </div>
-                
+
                 </li>
-              
-                
+
+
                 <li><a
                   href='#genericjsoncache'
                   class=" toggle-sibling">
                   GenericJSONCache
                   <span class='icon'>▸</span>
                 </a>
-                
+
                 <div class='toggle-target display-none'>
-                  
+
                   <ul class='list-reset py1-ul pl1'>
                     <li class='h5'><span>Static members</span></li>
-                    
+
                       <li><a
                         href='#genericjsoncachedefault_json_get_params'
                         class='regular pre-open'>
                         .DEFAULT_JSON_GET_PARAMS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncachedefault_json_get_params'
                         class='regular pre-open'>
                         .DEFAULT_JSON_GET_PARAMS
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncacheparsecachestring'
                         class='regular pre-open'>
                         .parseCacheString
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncachegetjsongetparams'
                         class='regular pre-open'>
                         .getJSONGetParams
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncachegetlistcache'
                         class='regular pre-open'>
                         .getListCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncachedelete'
                         class='regular pre-open'>
                         .delete
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncacheiscached'
                         class='regular pre-open'>
                         .isCached
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncache_getobject'
                         class='regular pre-open'>
                         ._getObject
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncache_getcache'
                         class='regular pre-open'>
                         ._getCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncache_setcache'
                         class='regular pre-open'>
                         ._setCache
                       </a></li>
-                    
+
                       <li><a
                         href='#genericjsoncache_delete'
                         class='regular pre-open'>
                         ._delete
                       </a></li>
-                    
+
                     </ul>
-                  
-                  
-                  
-                  
+
+
+
+
                 </div>
-                
+
                 </li>
-              
-                
+
+
                 <li><a
                   href='#genericstringcache'
                   class=" toggle-sibling">
                   GenericSTRINGCache
                   <span class='icon'>▸</span>
                 </a>
-                
+
                 <div class='toggle-target display-none'>
-                  
+
                   <ul class='list-reset py1-ul pl1'>
                     <li class='h5'><span>Static members</span></li>
-                    
+
                       <li><a
                         href='#genericstringcacheiscached'
                         class='regular pre-open'>
                         .isCached
                       </a></li>
-                    
+
                     </ul>
-                  
-                  
-                  
-                  
+
+
+
+
                 </div>
-                
+
                 </li>
-              
+
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
@@ -515,100 +515,100 @@
         </div>
       </div>
       <div id='split-right' class='relative overflow-auto height-viewport-100'>
-        
-          
+
+
           <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
   <div class='clearfix'>
-    
+
     <h3 class='fl m0' id='rediskeytypeenum'>
       RedisKeyTypeEnum
     </h3>
-    
-    
+
+
   </div>
-  
+
 
   <p>Redis key types</p>
 
     <div class='pre p1 fill-light mt0'>RedisKeyTypeEnum</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
-          
-        
-          
+
+
+
           <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
   <div class='clearfix'>
-    
+
     <h3 class='fl m0' id='genericrediscache'>
       GenericRedisCache
     </h3>
-    
-    
+
+
   </div>
-  
+
 
   <p>Contains a set of methods to handle <code>redis</code> operations</p>
 
     <div class='pre p1 fill-light mt0'>new GenericRedisCache()</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
-  
+
     <div class='border-bottom' id='genericrediscachegeneric_redis_attrs'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -619,81 +619,81 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
 
-  
+
+
     <div class='pre p1 fill-light mt0'>GENERIC_REDIS_ATTRS</div>
-  
+
     <p>
       Type:
       <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
     </p>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Properties</div>
     <div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           : The alias to the key
 
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>idNull</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          : The alias to the key when 
+          : The alias to the key when
 <code>id</code>
- is 
+ is
 <code>null</code>
 
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>idUndefined</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          : The string value to use when 
+          : The string value to use when
 <code>id</code>
- is 
+ is
 <code>undefined</code>
 
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegeneric_redis_attrs'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -704,44 +704,44 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Config attrs for cache key</p>
 
     <div class='pre p1 fill-light mt0'>GENERIC_REDIS_ATTRS</div>
-  
+
     <p>
       Type:
       <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
     </p>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Properties</div>
     <div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
+
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>type</span> <code class='quiet'>(<a href="#rediskeytypeenum">RedisKeyTypeEnum</a>)</code>
-          
-          
+
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>ids</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;KeyId>)</code>
           : The list of [
@@ -749,52 +749,52 @@
 ]
 <a href="KeyId">KeyId</a>
 
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>idNull</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          : The string value to use when 
+          : The string value to use when
 <code>id</code>
- is 
+ is
 <code>null</code>
 
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>idUndefined</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          : The string value to use when 
+          : The string value to use when
 <code>id</code>
- is 
+ is
 <code>undefined</code>
 
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegeneric_redis_attrs'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -805,50 +805,50 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Attrs that define the <code>cache</code> model (Override this on your class)</p>
 
     <div class='pre p1 fill-light mt0'>GENERIC_REDIS_ATTRS</div>
-  
+
     <p>
       Type:
       GenericRedisConfig
     </p>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachedefault_generic_redis_attrs'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -859,50 +859,50 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Default attrs to define the <code>cache</code> model</p>
 
     <div class='pre p1 fill-light mt0'>DEFAULT_GENERIC_REDIS_ATTRS</div>
-  
+
     <p>
       Type:
       GenericRedisConfig
     </p>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheattrs'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -913,50 +913,50 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Attrs that define the <code>cache</code> model (used internally)</p>
 
     <div class='pre p1 fill-light mt0'>ATTRS</div>
-  
+
     <p>
       Type:
       <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
     </p>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetids'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -967,67 +967,67 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the list of ids from <code>db</code></p>
 
     <div class='pre p1 fill-light mt0'>getIds(keys: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
 	    The cache keys
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
         The id values
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetdb'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1038,67 +1038,67 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the cache value from <code>db</code></p>
 
     <div class='pre p1 fill-light mt0'>getDB(key: any): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(any)</code>
 	    The cache key
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
         The model value
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetlistdb'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1109,67 +1109,67 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the list of cache values from <code>db</code></p>
 
     <div class='pre p1 fill-light mt0'>getListDB(keys: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
 	    The cache keys
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
         The cache values
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheongetcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1180,85 +1180,85 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Post-Hook for [<code>getCache</code>]<a href="#genericrediscachegetcache">GenericRedisCache.getCache</a> operation</p>
 
     <div class='pre p1 fill-light mt0'>onGetCache(object: any, key: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>object</span> <code class='quiet'>(any)</code>
 	    The cache object
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
 	    The cache key
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
 	    Additional params
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
         The cache value
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheongetlistcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1269,85 +1269,85 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Post-Hook for [<code>getCache</code>]<a href="#genericrediscachegetcache">GenericRedisCache.getCache</a> operation</p>
 
     <div class='pre p1 fill-light mt0'>onGetListCache(objects: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, keys: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>objects</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
 	    The cache objects
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
 	    The cache keys
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
 	    Additional params
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
         The cache value
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheonsaving'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1358,80 +1358,80 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Pre-Hook for <code>save</code> operation (@see <a href="#genericrediscacheset">GenericRedisCache.set</a>)</p>
 
     <div class='pre p1 fill-light mt0'>onSaving(key: any, value: any): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(any)</code>
 	    The cache key
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any)</code>
 	    The cache value
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
-        The value to be saved (or 
+        The value to be saved (or
 <code>null</code>
- to cancel the 
+ to cancel the
 <code>save</code>
 )
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheonsave'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1442,98 +1442,98 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Post-Hook for <code>save</code> operation</p>
 
     <div class='pre p1 fill-light mt0'>onSave(key: any, value: any, oldCache: any, command: any): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(any)</code>
 	    The cache key
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any)</code>
 	    The cache value
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>oldCache</span> <code class='quiet'>(any)</code>
 	    Old cache value
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>command</span> <code class='quiet'>(any)</code>
 	    Redis commands in case of multiple
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
-        The value to be saved (or 
+        The value to be saved (or
 <code>null</code>
- to cancel the 
+ to cancel the
 <code>save</code>
 )
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheondelete'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1544,80 +1544,80 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Post-Hook for <code>delete</code> operation</p>
 
     <div class='pre p1 fill-light mt0'>onDelete(key: any, value: any): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(any)</code>
 	    The cache key
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any)</code>
 	    The deleted cache value
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
-        The value to be saved (or 
+        The value to be saved (or
 <code>null</code>
- to cancel the 
+ to cancel the
 <code>save</code>
 )
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetkeyattrid'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1628,36 +1628,36 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the key value for <code>idAttr</code></p>
 
     <div class='pre p1 fill-light mt0'>getKeyAttrId(key: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, idAttr: KeyId): any</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    The 
+	    The
 <code>key</code>
  object
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>idAttr</span> <code class='quiet'>(KeyId)</code>
@@ -1667,32 +1667,32 @@
 <a href="GenericRedisCache.KeyId">GenericRedisCache.KeyId</a>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>any</code>:
         The key attr id
 
-      
-    
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
+
+
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> key = {
    <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>
    <span class="hljs-attr">b</span>: <span class="hljs-number">2</span>
@@ -1713,21 +1713,21 @@
 
  GenericRedisCache.getKeyAttrId(key, idAttr)
 <span class="hljs-comment">// 100</span></pre>
-    
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetkeyname'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1738,69 +1738,69 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Return the <code>key</code> name</p>
 
     <div class='pre p1 fill-light mt0'>getKeyName(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
 	    The params to compose the key name
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
-        The 
+        The
 <code>key</code>
  name
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetkeynames'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1811,67 +1811,67 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Return the list of key names</p>
 
     <div class='pre p1 fill-light mt0'>getKeyNames(keys: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
 	    The list of keys or object with the keys
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>:
         The list of key names
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetkeynamesobjects'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1882,66 +1882,66 @@
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns an array of objects from an object with array properties</p>
 
     <div class='pre p1 fill-light mt0'>getKeyNamesObjects(object: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, ids: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
 	    The object with array properties representing the keys
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>ids</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>>)</code>
 	    The ids of the key
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
         The list objects
 
-      
-    
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
+
+
       <pre class='p1 overflow-auto round fill-light'>params
 {
   <span class="hljs-attr">terminalsIds</span>: [<span class="hljs-string">&#x27;aa:bb:cc&#x27;</span>, <span class="hljs-string">&#x27;bb:cc:dd&#x27;</span>],
@@ -1954,21 +1954,21 @@ returns
    { <span class="hljs-attr">terminal_id</span>: <span class="hljs-string">&#x27;aa:bb:cc&#x27;</span>, <span class="hljs-attr">tracker_type_id</span>: <span class="hljs-number">2</span>  },
    ...
 ]</pre>
-    
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetidindexes'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -1979,66 +1979,66 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Gets the positions of the ids elements on the keyName</p>
 
     <div class='pre p1 fill-light mt0'>getIdIndexes(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    
+
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></code>:
         The positions of the id elements
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetidattrs'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2049,67 +2049,67 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns an array of object with the ID attributtes of the key based on an Object</p>
 
     <div class='pre p1 fill-light mt0'>getIdAttrs(objects: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>objects</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>>)</code>
 	    The objects to get the attrs from
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
         The objects with the ids of the key
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2120,86 +2120,86 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Gets the object from cache</p>
 
     <div class='pre p1 fill-light mt0'>getCache(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
-	    The key or 
+	    The key or
 <code>object</code>
- to get from the 
+ to get from the
 <code>cache</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>{}</code>)</code>
-	    An 
+	    An
 <code>object</code>
  with a set of params to fetch the object
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        The 
+        The
 <code>object</code>
- from 
+ from
 <code>cache</code>
 .
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetlast'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2210,74 +2210,74 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Gets the last object from cache</p>
 
     <div class='pre p1 fill-light mt0'>getLast(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
-	    The key or 
+	    The key or
 <code>object</code>
- to get from the 
+ to get from the
 <code>cache</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        The last 
+        The last
 <code>object</code>
- from 
+ from
 <code>cache</code>
 .
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheget'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2288,82 +2288,82 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the object from cache or <code>db</code></p>
 
     <div class='pre p1 fill-light mt0'>get(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), params: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)): (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
-	    The key or 
+	    The key or
 <code>object</code>
- to get from the 
+ to get from the
 <code>cache</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>))</code>
 	    The optional params
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>:
-        The object from 
+        The object from
 <code>cache</code>
- or 
+ or
 <code>db</code>
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetlistcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2374,36 +2374,36 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the list of objects from cache</p>
 
     <div class='pre p1 fill-light mt0'>getListCache(keys: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
-	    The 
+	    The
 <code>object</code>
  with the keys or an array of keys
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
@@ -2411,42 +2411,42 @@ returns
 	    An object with a set of params to fetch the object
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
         The list of objects from cache
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachegetlist'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2457,34 +2457,34 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the list of <code>values</code></p>
 
     <div class='pre p1 fill-light mt0'>getList(keys: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>), params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>))</code>
 	    The keys list or object
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
@@ -2492,7 +2492,7 @@ returns
 	    An object with a set of params to fetch the object
 
           </div>
-          
+
           <table class='mt1 mb2 fixed-table h5 col-12'>
             <colgroup>
               <col width='30%' />
@@ -2505,10 +2505,10 @@ returns
               </tr>
             </thead>
             <tbody class='mt1'>
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.attrs</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>
-  
+
     (default <code>[]</code>)
   </td>
   <td class='break-word'><span>The list of attrs
@@ -2516,46 +2516,46 @@ returns
 </tr>
 
 
-              
+
             </tbody>
           </table>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        The list of 
+        The list of
 <code>values</code>
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachesetcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2566,106 +2566,106 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Sets the commands to save the value on cache</p>
 
     <div class='pre p1 fill-light mt0'>setCache(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), value: any?, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi?): redis.Multi</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
 	    The key or object to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any?)</code>
 	    The value to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi?
             = <code>redis.multi()</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>redis.Multi</code>:
-        The commands to be executed including the 
+        The commands to be executed including the
 <code>set</code>
  command
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheaddcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2676,43 +2676,43 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Sets the commands to save the value on cache</p>
 
     <div class='pre p1 fill-light mt0'>addCache(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), value: any?, position: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
 	    The key or object to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any?)</code>
 	    The value to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>position</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?
@@ -2720,70 +2720,70 @@ returns
 	    The index position to insert the item
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi?
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The new list size
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachesetobject'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2794,105 +2794,105 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Saves the <code>object</code> in cache</p>
 
     <div class='pre p1 fill-light mt0'>setObject(object: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi?): redis.Multi</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
 	    The object to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi?
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>redis.Multi</code>:
-        The 
+        The
 <code>commands.Multi</code>
  to execute
 
-      
-    
-  
 
-  
 
-  
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Throws</div>
     <ul>
-      
+
         <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>: Any sort or error
 </li>
-      
+
     </ul>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachesetvalue'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2903,115 +2903,115 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Saves the <code>key</code> in cache</p>
 
     <div class='pre p1 fill-light mt0'>setValue(key: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value: any, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi?): redis.Multi</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
 	    the key to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any)</code>
-	    The 
+	    The
 <code>value</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi?
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>redis.Multi</code>:
-        The 
+        The
 <code>commands.Multi</code>
  to execute
 
-      
-    
-  
 
-  
 
-  
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Throws</div>
     <ul>
-      
+
         <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>: Any sort or error
 </li>
-      
+
     </ul>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheaddobject'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3022,122 +3022,122 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Saves the <code>object</code> in cache</p>
 
     <div class='pre p1 fill-light mt0'>addObject(key: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value: any, position: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
 	    The object to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any)</code>
-	    The 
+	    The
 <code>value</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>position</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?)</code>
 	    The index position to insert the item
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi?
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The new list size
 
-      
-    
-  
 
-  
 
-  
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Throws</div>
     <ul>
-      
+
         <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>: Any sort or error
 </li>
-      
+
     </ul>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheset'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3148,125 +3148,125 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Saves the <code>key</code> in cache</p>
 
     <div class='pre p1 fill-light mt0'>set(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>), value: any?, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi): redis.Multi</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>))</code>
-	    the cache key or its 
+	    the cache key or its
 <code>object</code>
  value to save
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any?
             = <code>undefined</code>)</code>
-	    The 
+	    The
 <code>value</code>
- to save on cache or 
+ to save on cache or
 <code>undefined</code>
- to fetch from 
+ to fetch from
 <code>db</code>
- or case 
+ or case
 <code>key</code>
  is the cache value
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain (See 
+ multi command object to chain (See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>redis.Multi</code>:
-        The 
+        The
 <code>commands.Multi</code>
  to execute
 
-      
-    
-  
 
-  
 
-  
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Throws</div>
     <ul>
-      
+
         <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>: Any sort or error
 </li>
-      
+
     </ul>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheadd'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3277,54 +3277,54 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Adds the <code>key</code> in cache</p>
 
     <div class='pre p1 fill-light mt0'>add(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>), value: any?, position: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?, jsonPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>))</code>
-	    the cache key or its 
+	    the cache key or its
 <code>object</code>
  value to save
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any?
             = <code>undefined</code>)</code>
-	    The 
+	    The
 <code>value</code>
- to save on cache or 
+ to save on cache or
 <code>undefined</code>
- to fetch from 
+ to fetch from
 <code>db</code>
- or case 
+ or case
 <code>key</code>
  is the cache value
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>position</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?
@@ -3332,78 +3332,78 @@ returns
 	    The index position to insert the item
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>jsonPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>GenericJSONCache.DEFAULT_PATH</code>)</code>
-	    The 
+	    The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain (See 
+ multi command object to chain (See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The new list size
 
-      
-    
-  
 
-  
 
-  
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Throws</div>
     <ul>
-      
+
         <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>: Any sort or error
 </li>
-      
+
     </ul>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachesetlist'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3414,76 +3414,76 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Sets the list of objects to save on cache</p>
 
     <div class='pre p1 fill-light mt0'>setList(objects: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>objects</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
 	    The list of objects to set on cache
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
-        The saved 
+        The saved
 <code>objects</code>
 
-      
-    
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
+
+
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-built_in">this</span>.setList([ { <span class="hljs-attr">key</span>:<span class="hljs-string">&#x27;128&#x27;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&#x27;teste&#x27;</span> } ])
 <span class="hljs-built_in">this</span>.setList([ { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;la&#x27;</span> }, { ... }, ... ])
 <span class="hljs-built_in">this</span>.setList([ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ]) <span class="hljs-comment">// ids from `db`</span></pre>
-    
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachedelete'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3494,67 +3494,67 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Delete the keys from cache</p>
 
     <div class='pre p1 fill-light mt0'>delete(keys: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>))</code>
 	    The keys or key to remove from cache
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
         The values deleted from cache
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheslice'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3565,34 +3565,34 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Removes the item(s) from cache outside the <code>start</code> - <code>stop</code> params</p>
 
     <div class='pre p1 fill-light mt0'>slice(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
 	    The key or object to save on cache
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?
@@ -3600,7 +3600,7 @@ returns
 	    The value to save on cache
 
           </div>
-          
+
           <table class='mt1 mb2 fixed-table h5 col-12'>
             <colgroup>
               <col width='30%' />
@@ -3613,25 +3613,25 @@ returns
               </tr>
             </thead>
             <tbody class='mt1'>
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.path</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
-  
+
     (default <code>&#39;.&#39;</code>)
   </td>
-  <td class='break-word'><span>The 
+  <td class='break-word'><span>The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 </span></td>
 </tr>
 
 
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.start</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>
-  
+
     (default <code>1</code>)
   </td>
   <td class='break-word'><span>The start index to maintain
@@ -3639,10 +3639,10 @@ returns
 </tr>
 
 
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.stop</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>
-  
+
     (default <code>undefined</code>)
   </td>
   <td class='break-word'><span>The stop index to maintain
@@ -3650,47 +3650,47 @@ returns
 </tr>
 
 
-              
+
             </tbody>
           </table>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        The new 
+        The new
 <code>array</code>
  size
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheiscached'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3701,66 +3701,66 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Return whether the key is cached or not</p>
 
     <div class='pre p1 fill-light mt0'>isCached(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>))</code>
-	    
+
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         Wether the key is cached or not
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheiskey'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3771,73 +3771,73 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether <code>key</code> has the id attrs for this <code>cache</code></p>
 
     <div class='pre p1 fill-light mt0'>isKey(key: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(any)</code>
-	    The cache 
+	    The cache
 <code>key</code>
  value
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether 
+        Whether
 <code>key</code>
- is an 
+ is an
 <code>key</code>
  value or not
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheisattrtrue'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3848,96 +3848,96 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether the <code>attr</code> is <code>true</code> or <code>false</code></p>
 
     <div class='pre p1 fill-light mt0'>isAttrTrue(key: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), attrName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
 	    The cache key or its object
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>attrName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>attr</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>defaultValue</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
             = <code>true</code>)</code>
-	    The 
+	    The
 <code>attr</code>
- default value instead 
+ default value instead
 <code>cacheObject[attrName]</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether the 
+        Whether the
 <code>attr</code>
- is 
+ is
 <code>true</code>
- or 
+ or
 <code>false</code>
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscacheiskeyvalid'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -3948,69 +3948,69 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether <code>key</code> is valid for this cache model</p>
 
     <div class='pre p1 fill-light mt0'>isKeyValid(key: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>key</span> <code class='quiet'>(any)</code>
 	    The cache key
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether 
+        Whether
 <code>key</code>
  is valid for this cache model
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscachehaskeyid'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4021,45 +4021,45 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether this cache model has [<code>KeyId</code>]<a href="GenericRedisCache.KeyId">GenericRedisCache.KeyId</a></p>
 
     <div class='pre p1 fill-light mt0'>hasKeyId(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
-    
+
+
+
+
+
+
+
+
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether it has 
+        Whether it has
 <code>KeyId</code>
  or not
 
-      
-    
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
+
+
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RandomRedis</span> </span>{
    <span class="hljs-keyword">static</span> <span class="hljs-keyword">get</span> <span class="hljs-title">GENERIC_REDIS_ATTRS</span>() {
      <span class="hljs-keyword">return</span> {
@@ -4086,21 +4086,21 @@ returns
 
  AnotherRandomRedis.hasKeyId()
 <span class="hljs-comment">// true</span></pre>
-    
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscache_getidattr'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4111,67 +4111,67 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns an object with the ID attributtes of the key based on an Object</p>
 
     <div class='pre p1 fill-light mt0'>_getIdAttr(object: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
 	    The object to get the attrs from
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
         The object with the ids of the key
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscache_getkeysnotcached'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4182,74 +4182,74 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the keys not cached based on the list passed</p>
 
     <div class='pre p1 fill-light mt0'>_getKeysNotCached(keys: any, objects: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keys</span> <code class='quiet'>(any)</code>
-	    
+
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>objects</span> <code class='quiet'>(any)</code>
-	    
+
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
         The list of keys not cached
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericrediscache_getkeynamescache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4260,139 +4260,139 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the <code>key</code> names in cache</p>
 
     <div class='pre p1 fill-light mt0'>_getKeyNamesCache(searchKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, commands: redis.Multi?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>searchKey</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
 	    The search string to fetch the key names
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi?
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>></code>:
-        The 
+        The
 <code>key</code>
  names in cache
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
 </div>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 </section>
 
-          
-        
-          
+
+
+
           <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
   <div class='clearfix'>
-    
+
     <h3 class='fl m0' id='generichashcache'>
       GenericHASHCache
     </h3>
-    
-    
+
+
   </div>
-  
+
 
   <p>Contains a set of simple methods to handle the <code>redis</code> hash keys operations</p>
 
     <div class='pre p1 fill-light mt0'>new GenericHASHCache()</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
-  
+
     <div class='border-bottom' id='generichashcacheiscached'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4403,142 +4403,142 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether the <code>keyName</code> is cached or not</p>
 
     <div class='pre p1 fill-light mt0'>isCached(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, field: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>keyName</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>field</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
 	    The field of the HASH key
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether the 
+        Whether the
 <code>keyName</code>
  is cached or not
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
 </div>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 </section>
 
-          
-        
-          
+
+
+
           <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
   <div class='clearfix'>
-    
+
     <h3 class='fl m0' id='genericjsonarraycache'>
       GenericJSONArrayCache
     </h3>
-    
-    
+
+
   </div>
-  
+
 
   <p>Contains a set of simple methods to handle the <code>redis</code> json array keys operations</p>
 
     <div class='pre p1 fill-light mt0'>new GenericJSONArrayCache()</div>
-  
-  
+
+
     <p>
       Extends
-      
+
         <a href="#genericjsoncache">GenericJSONCache</a>
-      
+
     </p>
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
-  
+
     <div class='border-bottom' id='genericjsonarraycacheiscached'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4549,70 +4549,70 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether the <code>keyName</code> is cached or not</p>
 
     <div class='pre p1 fill-light mt0'>isCached(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>keyName</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether the 
+        Whether the
 <code>keyName</code>
  is cached or not
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsonarraycache_addcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4623,46 +4623,46 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Adds the item on cache array (<code>index 0</code> default)</p>
 
     <div class='pre p1 fill-light mt0'>_addCache(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, object: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, position: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>, attr: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    The 
+	    The
 <code>object</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>position</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
@@ -4670,68 +4670,68 @@ returns
 	    The index position to insert the item
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>attr</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>&#39;.&#39;</code>)</code>
-	    The 
+	    The
 <code>attr</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The new list size
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsonarraycacheinitarraycache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4742,104 +4742,104 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Sets the <code>object</code> to <code>keyName</code></p>
 
     <div class='pre p1 fill-light mt0'>initArrayCache(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, attr: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
 	    The value to insert
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>attr</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>&#39;.&#39;</code>)</code>
-	    The 
+	    The
 <code>attr</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The new list size
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsonarraycacheaddcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4850,45 +4850,45 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Adds the item on cache array (<code>last index</code> default)</p>
 
     <div class='pre p1 fill-light mt0'>addCache(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value: any, position: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>, attr: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(any)</code>
 	    The value to insert
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>position</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
@@ -4896,68 +4896,68 @@ returns
 	    The index position to insert the item
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>attr</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>&#39;.&#39;</code>)</code>
-	    The 
+	    The
 <code>attr</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The new list size
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsonarraycacheslice'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -4968,36 +4968,36 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Removes the item(s) from cache outside the <code>start</code> - <code>stop</code> params</p>
 
     <div class='pre p1 fill-light mt0'>slice(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?
@@ -5005,7 +5005,7 @@ returns
 	    The value to save on cache
 
           </div>
-          
+
           <table class='mt1 mb2 fixed-table h5 col-12'>
             <colgroup>
               <col width='30%' />
@@ -5018,25 +5018,25 @@ returns
               </tr>
             </thead>
             <tbody class='mt1'>
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.path</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
-  
+
     (default <code>&#39;.&#39;</code>)
   </td>
-  <td class='break-word'><span>The 
+  <td class='break-word'><span>The
 <code>path</code>
- to object (in case of 
+ to object (in case of
 <code>JSON</code>
 )
 </span></td>
 </tr>
 
 
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.start</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>
-  
+
     (default <code>1</code>)
   </td>
   <td class='break-word'><span>The start index to maintain
@@ -5044,10 +5044,10 @@ returns
 </tr>
 
 
-              
+
                 <tr>
   <td class='break-word'><span class='code bold'>params.stop</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>
-  
+
     (default <code>undefined</code>)
   </td>
   <td class='break-word'><span>The stop index to maintain
@@ -5055,103 +5055,103 @@ returns
 </tr>
 
 
-              
+
             </tbody>
           </table>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        The new 
+        The new
 <code>array</code>
  size
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
 </div>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 </section>
 
-          
-        
-          
+
+
+
           <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
   <div class='clearfix'>
-    
+
     <h3 class='fl m0' id='genericjsoncache'>
       GenericJSONCache
     </h3>
-    
-    
+
+
   </div>
-  
+
 
   <p>Contains a set of simple methods to handle the <code>redis</code> json keys operations</p>
 
     <div class='pre p1 fill-light mt0'>new GenericJSONCache()</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
-  
+
     <div class='border-bottom' id='genericjsoncachedefault_json_get_params'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5162,61 +5162,61 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>The list of <code>JSON.GET</code> command (i.e. <code>JSON>GET &#x3C;key> [ params ]</code>)</p>
 
     <div class='pre p1 fill-light mt0'>DEFAULT_JSON_GET_PARAMS</div>
-  
+
     <p>
       Type:
       <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
     </p>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Properties</div>
     <div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>?)</code>
-          
-          
+
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncachedefault_json_get_params'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5227,62 +5227,62 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Default [<code>JSONGetParams</code>]<a href="GenericJSONCache.JSONGetParams">GenericJSONCache.JSONGetParams</a> object</p>
 
     <div class='pre p1 fill-light mt0'>DEFAULT_JSON_GET_PARAMS</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Properties</div>
     <div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>?)</code>
-          
-          
+
+
         </div>
-      
+
         <div class='space-bottom0'>
           <span class='code bold'>paths</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>?)</code>
-          
-          
+
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncacheparsecachestring'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5293,70 +5293,70 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the parsed cache value</p>
 
     <div class='pre p1 fill-light mt0'>parseCacheString(cacheString: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>cacheString</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>cache</code>
  string
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>:
-        The parsed cache 
+        The parsed cache
 <code>value</code>
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncachegetjsongetparams'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5367,25 +5367,25 @@ returns
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the list of redis <code>JSON.GET</code> command params</p>
 
     <div class='pre p1 fill-light mt0'>getJSONGetParams(params: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | JSONGetParams)): JSONGetParams</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | JSONGetParams)
@@ -5393,32 +5393,32 @@ returns
 	    The redis command list/object params
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>JSONGetParams</code>:
         The list of command params
 
-      
-    
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
+
+
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-string">`JSON.GET`</span> params <span class="hljs-string">`JSON.GET &lt;key&gt;
    [INDENT indentation-string]
    [NEWLINE line-break-string]
@@ -5438,21 +5438,21 @@ paramsArray = [
 
 GenericJSONCache.getJSONGetParams(params)
 // [ &#x27;NEWLINE&#x27;, &#x27;SPACE&#x27;, &#x27;id&#x27;, &#x27;nam&#x27;, &#x27;nested.name&#x27; ]</span></pre>
-    
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncachegetlistcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5463,99 +5463,99 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the list of <code>objects</code> in cache</p>
 
     <div class='pre p1 fill-light mt0'>getListCache(keyNames: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyNames</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>DEFAULT_JSON_GET_PARAMS</code>)</code>
-	    The list of specified 
+	    The list of specified
 <code>attrs</code>
- to return (@see 
+ to return (@see
 <a href="GenericJSONCache.DEFAULT_JSON_GET_PARAMS">GenericJSONCache.DEFAULT_JSON_GET_PARAMS</a>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>:
-        The 
+        The
 <code>objects</code>
  in cache
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncachedelete'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5566,68 +5566,68 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Deletes the <code>keyNames</code> from cache</p>
 
     <div class='pre p1 fill-light mt0'>delete(keyNames: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyNames</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>))</code>
-	    The list of 
+	    The list of
 <code>keyNames</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></code>:
         The count of deleted keys
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncacheiscached'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5638,70 +5638,70 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether the <code>keyName</code> is cached or not</p>
 
     <div class='pre p1 fill-light mt0'>isCached(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>keyName</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether the 
+        Whether the
 <code>keyName</code>
  is cached or not
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncache_getobject'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5712,72 +5712,72 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the <code>value</code> as <code>Object</code></p>
 
     <div class='pre p1 fill-light mt0'>_getObject(value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>value</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    The 
+	    The
 <code>value</code>
  passed
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        The 
+        The
 <code>value</code>
- passed as 
+ passed as
 <code>Object</code>
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncache_getcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5788,99 +5788,99 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns the <code>objects</code> cache object</p>
 
     <div class='pre p1 fill-light mt0'>_getCache(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>DEFAULT_JSON_GET_PARAMS</code>)</code>
-	    The list of specified 
+	    The list of specified
 <code>attrs</code>
- to return (@see 
+ to return (@see
 <a href="GenericJSONCache.DEFAULT_JSON_GET_PARAMS">GenericJSONCache.DEFAULT_JSON_GET_PARAMS</a>
 )
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>:
-        The 
+        The
 <code>object</code>
  cache
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncache_setcache'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -5891,107 +5891,107 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Sets the <code>object</code> to <code>keyName</code></p>
 
     <div class='pre p1 fill-light mt0'>_setCache(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, object: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, attr: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, commands: redis.Multi): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>key</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    The 
+	    The
 <code>object</code>
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>attr</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
             = <code>&#39;.&#39;</code>)</code>
-	    The 
+	    The
 <code>attr</code>
  name
 
           </div>
-          
+
         </div>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>commands</span> <code class='quiet'>(redis.Multi
             = <code>redis</code>)</code>
-	    The 
+	    The
 <code>redis</code>
- multi command object to chain(See 
+ multi command object to chain(See
 <a href="https://github.com/NodeRedis/node_redis#clientmulticommands">https://github.com/NodeRedis/node_redis#clientmulticommands</a>
 )
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>:
-        The 
+        The
 <code>status</code>
  of the operation
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
     <div class='border-bottom' id='genericjsoncache_delete'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -6002,124 +6002,124 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Deletes the <code>keyName</code> from cache</p>
 
     <div class='pre p1 fill-light mt0'>_delete(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>keyName</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         The count of deleted keys
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
 </div>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 </section>
 
-          
-        
-          
+
+
+
           <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
   <div class='clearfix'>
-    
+
     <h3 class='fl m0' id='genericstringcache'>
       GenericSTRINGCache
     </h3>
-    
-    
+
+
   </div>
-  
+
 
   <p>Contains a set of simple methods to handle the <code>redis</code> <code>SET/STRING</code> keys operations</p>
 
     <div class='pre p1 fill-light mt0'>new GenericSTRINGCache()</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
-  
+
     <div class='border-bottom' id='genericstringcacheiscached'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -6130,83 +6130,83 @@ GenericJSONCache.getJSONGetParams(params)
       <div class="clearfix display-none toggle-target">
         <section class='p2 mb2 clearfix bg-white minishadow'>
 
-  
+
 
   <p>Returns whether the <code>keyName</code> is cached or not</p>
 
     <div class='pre p1 fill-light mt0'>isCached(keyName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
-  
-  
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
-      
+
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>keyName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    The 
+	    The
 <code>keyName</code>
 
           </div>
-          
+
         </div>
-      
+
     </div>
-  
 
-  
 
-  
-    
+
+
+
+
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
-        Whether the 
+        Whether the
 <code>keyName</code>
  is cached or not
 
-      
-    
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
 </section>
 
       </div>
     </div>
-  
+
 </div>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 </section>
 
-          
-        
+
+
       </div>
     </div>
   <script src='assets/anchor.js'></script>

@@ -1,5 +1,5 @@
 {
-  "name": "@contartec-team/generic-redis-cache",
+  "name": "@kajoo-team/generic-redis-cache",
   "version": "1.8.0",
   "description": "Generic service for operations on redis keys",
   "main": "lib/services/GenericRedisCache.js",
@@ -15,15 +15,15 @@
     "test:coverage": "cross-env NODE_ENV=test nyc --reporter=text-summary --reporter=lcov --reporter=cobertura --report-dir=./coverage --reporter=html npm run mocha -- --reporter=min --exit",
     "coverage:upload": "codecov",
     "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'",
-    "update-version": "node -e 'require(\"@contartec-team/version-release\").updateVersion()'",
-    "release-version": "node -e 'require(\"@contartec-team/version-release\").releaseVersion()'"
+    "update-version": "node -e 'require(\"@kajoo-team/version-release\").updateVersion()'",
+    "release-version": "node -e 'require(\"@kajoo-team/version-release\").releaseVersion()'"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://contartec-team@github.com/contartec-team/generic-redis-cache.git"
+    "url": "git+https://kajoo-team@github.com/kajoo-team/generic-redis-cache.git"
   },
   "keywords": [
     "node",
@@ -31,7 +31,7 @@
     "redis",
     "cache"
   ],
-  "author": "contartec",
+  "author": "kajoo",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -40,9 +40,9 @@
     "redis-url": "^1.2.1"
   },
   "devDependencies": {
-    "@contartec-team/spy-mock": "^0.2.0",
-    "@contartec-team/version-release": "^0.1.0",
-    "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
+    "@kajoo-team/spy-mock": "^0.2.0",
+    "@kajoo-team/version-release": "^0.1.0",
+    "@kajoo-team/git-hooks": "git+https://github.com/kajoo-team/git-hooks.git",
     "bluebird": "^3.4.6",
     "chai": "^4.2.0",
     "chai-as-promised": "^5.3.0",
